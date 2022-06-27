@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Merriweather&family=Poppins:wght@400;500;600&display=swap');
+
+@font-face {
+	font-family: Craft Rounded;
+	src: url(CraftRounded-DemiBold.woff2);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+}
+
+.striped-green:nth-child(even) {
+	@apply bg-groose-offwhite;
+}
+.striped-gray:nth-child(odd) {
+	@apply bg-gray-50;
+}
+.striped-gray:nth-child(odd),
+.striped-green:nth-child(even) {
+	transition: background-color 0.2s;
+}
+
+:root,
+html,
+body,
+#app {
+	@apply font-sans;
+	/* @apply bg-groose-offwhite; */
+	@apply h-screen;
+	@apply m-0;
+	@apply overscroll-none;
+	overflow-x: hidden;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+	touch-action: pan-y;
+	/* position: fixed; */
+	width: 100%;
+}
+
+input {
+	background: transparent;
+}

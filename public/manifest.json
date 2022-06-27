@@ -1,0 +1,20 @@
+{
+	"name": "Goose List",
+
+	"short_name": "Goose List",
+
+	"start_url": "http://192.168.0.150:3000/",
+
+	"display": "standalone",
+
+	"icons": [
+		{
+			"src": "/icon.png",
+			"start_url": "http://192.168.0.150:3000/",
+
+			"sizes": "512x512",
+
+			"type": "image/png"
+		}
+	]
+}
